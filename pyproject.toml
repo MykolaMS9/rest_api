@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "rest-api"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "rest_api"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = {extras = ["all"], version = "^0.103.1"}
+uvicorn = {extras = ["standart"], version = "^0.23.2"}
+sqlalchemy = "^2.0.21"
+pydantic = {extras = ["dotenv"], version = "^2.4.2"}
+alembic = "^1.12.0"
+psycopg2 = "^2.9.7"
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+libgravatar = "^1.0.4"
+fastapi-mail = "^1.4.1"
+redis = "4.5.5"
+pydentic = {extras = ["email"], version = "^0.0.1.dev3"}
+pydantic-settings = "^2.0.3"
+python-dotenv = "^1.0.0"
+fastapi-limiter = "^0.1.5"
+cloudinary = "^1.36.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
