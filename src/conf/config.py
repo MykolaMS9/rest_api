@@ -16,7 +16,6 @@ class Settings(BaseSettings):
     cloudinary_api_key: int = 12345678
     cloudinary_api_secret: str = "api_secret"
 
-
     model_config = SettingsConfigDict(env_file=".env", extra='ignore')
 
 
